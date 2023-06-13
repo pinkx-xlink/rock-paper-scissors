@@ -1,6 +1,12 @@
  
     //JAVASCRIPT//
     <script>
+    const game = () => {
+        let plaeyerScore = 0;
+        let computerScore = 0;
+        let moves = 0;
+        
+    }
 
         //PLAYER SELECT//
         function getPlayerChoice()
