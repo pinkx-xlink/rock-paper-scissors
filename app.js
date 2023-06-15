@@ -91,6 +91,15 @@
             playerOptions.forEach(option => {
                 option.style.display = 'none';
             })
+
+            chooseMove.innerText = 'Game Over!!'
+            movesLeft.style.display = 'none';
+
+            if(playerScore > computerScore){
+                ReadableStreamDefaultReader.style.fontSize = '2rem';
+                result.innerText = 'You Won the Game!'
+                result.style.color = '#308D46';
+            }
             
         }
     //}
