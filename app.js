@@ -81,6 +81,18 @@
             }
         }
 
+        //function to run when game over
+        const gameOver = (playerOptions,movesLeft) => {
+
+            const chooseMove = document.querySelector('.move');
+            const result = document.querySelector('.result');
+            const reloadBtn = document.querySelector('.reload');
+
+            playerOptions.forEach(option => {
+                option.style.display = 'none';
+            })
+            
+        }
     //}
 
         //PLAYER SELECT//
