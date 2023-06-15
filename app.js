@@ -36,21 +36,21 @@
     }
 
         //PLAYER SELECT//
-        function getPlayerChoice()
+        //function getPlayerChoice()
         
 
 
         //COMPUTER SELECT//
-        function getComputerChoice()
+        //function getComputerChoice()
 
 //PLAY ROUND FUNCTION//
-        function playRound(playerSelection, computerSelection) {
+        //function playRound(playerSelection, computerSelection) {
 
-        }
+       // }
 
-        const playerSelection = "rock";
-        const computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
+        //const playerSelection = "rock";
+        //const computerSelection = getComputerChoice();
+        //console.log(playRound(playerSelection, computerSelection));
 
 
     </script>
