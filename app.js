@@ -100,6 +100,17 @@
                 result.innerText = 'You Won the Game!'
                 result.style.color = '#308D46';
             }
+            else if(playerScore < computerScore){
+                result.style.fontSize = '2rem';
+                result.innerText = 'You Lost!!!';
+                result.style.color = 'red';
+            }
+            else{
+                result.style.fontSize = '2rem';
+                result.innerText = 'Tie!!';
+                result.style.color = 'grey'
+            }
+            reloadBtn.innerText = 'Restart';
             
         }
     //}
