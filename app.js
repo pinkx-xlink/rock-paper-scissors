@@ -27,7 +27,12 @@
 
 
                     //to check who wins
-                    winnder(this.innerText,computerChoice)
+                    winner(this.innerText,computerChoice)
+
+                    //call gameOver after 10 moves
+                    if(moves == 10){
+                        gameOver(playerOptions,movesLeft);
+                    }
                 })
             })
         }
