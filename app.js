@@ -12,7 +12,18 @@
             const scissorsBtn = document.querySelector('.scissors')
             const playerOptions = [rockBtn,paperBtn,scissorsBtn];
             const computerOptions = ['rock', 'paper', 'scissors']
+
+            //to start playing game
+            playerOptions.forEach(option => {
+                Option.addEventListener('click',function(){
+
+                    const movesLeft = document.querySelector('.movesleft');
+                    moves++;
+                    movesLeft.innerText = `Moves Left: ${10-moves}`;
+                })
+            })
         }
+
 
     }
 
