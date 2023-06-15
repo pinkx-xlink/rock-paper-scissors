@@ -46,7 +46,19 @@
             player = player.toLowerCase();
             compiter = computer.toLowerCase();
             if(player === computer){
-                XPathResult.textContent = 'Computer Won';
+                result.textContent = 'Tie';
+            }
+            else if(player == 'rock'){
+                if(computer == 'paper'){
+                    result.textContent = "Computer won!";
+                    computerScore++;
+                    computerScoreBoard.textContent = computerScore;
+                }else{
+                    result.textContent = 'Player won!'
+                    playerScore++;
+                    playerScoreBoard.textContent = playerScore;
+                }
+
             }
         }
     }
