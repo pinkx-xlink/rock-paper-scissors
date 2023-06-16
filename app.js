@@ -118,6 +118,10 @@
         }
 
         playGame;
+
+    }
+
+    game();
     //}
 
         //PLAYER SELECT//
