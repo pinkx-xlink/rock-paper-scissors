@@ -2,9 +2,9 @@
     const game = () => {
         let playerScore = 0;
         let computerScore = 0;
-        let moves = ;
+        let moves = 0;
 
-        const playGame = () +. {
+        const playGame = () => {
             const rockBtn = document.querySelector('.rock')
             const paperBtn = document.querySelector('.paper')
             const scissorsBtn = document.querySelector('.scissors')
@@ -56,13 +56,14 @@
                     playerScore++;
                     playerScoreBoard.textContent = playerScore;
                 }
-            else if(player == 'scissors'){
-                if(computer == 'rock'){
-                    result.textContent = 'Computer Won!';
-                    computerScore++;
-                    computerScoreBoard.textContent = computerScore;     
+                else if(player == 'scissors'){
+                    if(computer == 'rock'){
+                        result.textContent = 'Computer Won!';
+                        computerScore++;
+                        computerScoreBoard.textContent = computerScore;     
                 }else{
-                    result.textContent = 'Player Won!'playerScore++;
+                    result.textContent = 'Player Won!';
+                    playerScore++;
                     playerScoreBoard.textContent = playerScore;
                 }
             }
