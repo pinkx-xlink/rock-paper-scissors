@@ -53,7 +53,7 @@
                     computerScoreBoard.textContent = computerScore;
 
                 }else{
-                    result.textContent = 'Player won!'
+                    result.textContent = 'Player won!';
                     playerScore++;
                     playerScoreBoard.textContent = playerScore;
                 }
