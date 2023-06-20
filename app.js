@@ -118,7 +118,7 @@
             })
         }
 
-        playGame;
+        playGame();
 
     }
 
