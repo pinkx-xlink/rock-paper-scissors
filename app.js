@@ -5,15 +5,15 @@
         let moves = 0;
 
         const playGame = () => {
-            const rockBtn = document.querySelector('.rock')
-            const paperBtn = document.querySelector('.paper')
-            const scissorsBtn = document.querySelector('.scissors')
+            const rockBtn = document.querySelector('.rock');
+            const paperBtn = document.querySelector('.paper');
+            const scissorsBtn = document.querySelector('.scissors');
             const playerOptions = [rockBtn,paperBtn,scissorsBtn];
             const computerOptions = ['rock', 'paper', 'scissors']
 
             //to start playing game
             playerOptions.forEach(option => {
-                Option.addEventListener('click',function(){
+                option.addEventListener('click',function(){
 
                     const movesLeft = document.querySelector('.movesleft');
                     moves++;
