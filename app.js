@@ -37,12 +37,12 @@
 
 
         //decide winner
-        const winner = (plaeyer,computer) => {
+        const winner = (player,computer) => {
             const result = document.querySelector('.result');
             const playerScoreBoard = document.querySelector('p-count')
             const computerScoreBoard = document.querySelector('c-count');
             player = player.toLowerCase();
-            compiter = computer.toLowerCase();
+            computer = computer.toLowerCase();
             if(player === computer){
                 result.textContent = 'Tie';
             }
