@@ -51,6 +51,7 @@
                     result.textContent = "Computer won!";
                     computerScore++;
                     computerScoreBoard.textContent = computerScore;
+
                 }else{
                     result.textContent = 'Player won!'
                     playerScore++;
@@ -96,7 +97,7 @@
             movesLeft.style.display = 'none';
 
             if(playerScore > computerScore){
-                ReadableStreamDefaultReader.style.fontSize = '2rem';
+                result.style.fontSize = '2rem';
                 result.innerText = 'You Won the Game!'
                 result.style.color = '#308D46';
             }
