@@ -9,7 +9,7 @@
             const paperBtn = document.querySelector('.paper');
             const scissorsBtn = document.querySelector('.scissors');
             const playerOptions = [rockBtn,paperBtn,scissorsBtn];
-            const computerOptions = ['rock', 'paper', 'scissors']
+            const computerOptions = ['rock', 'paper', 'scissors'];
 
             //to start playing game
             playerOptions.forEach(option => {
@@ -25,7 +25,7 @@
 
 
                     //to check who wins
-                    winner(this.innerText,computerChoice)
+                    winner(this.innerText,computerChoice);
 
                     //call gameOver after 10 moves
                     if(moves == 10){
@@ -39,7 +39,7 @@
         //decide winner
         const winner = (player,computer) => {
             const result = document.querySelector('.result');
-            const playerScoreBoard = document.querySelector('p-count')
+            const playerScoreBoard = document.querySelector('p-count');
             const computerScoreBoard = document.querySelector('c-count');
             player = player.toLowerCase();
             computer = computer.toLowerCase();
@@ -93,12 +93,12 @@
                 option.style.display = 'none';
             })
 
-            chooseMove.innerText = 'Game Over!!'
+            chooseMove.innerText = 'Game Over!!';
             movesLeft.style.display = 'none';
 
             if(playerScore > computerScore){
                 result.style.fontSize = '2rem';
-                result.innerText = 'You Won the Game!'
+                result.innerText = 'You Won the Game!';
                 result.style.color = '#308D46';
             }
             else if(playerScore < computerScore){
@@ -109,10 +109,10 @@
             else{
                 result.style.fontSize = '2rem';
                 result.innerText = 'Tie!!';
-                result.style.color = 'grey'
+                result.style.color = 'grey';
             }
             reloadBtn.innerText = 'Restart';
-            reloadBtn.style.display = 'flex'
+            reloadBtn.style.display = 'flex';
             reloadBtn.addEventListener('click',() => {
                 window.location.reload();
             })
